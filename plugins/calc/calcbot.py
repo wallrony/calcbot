@@ -19,13 +19,6 @@ class CalcBot(BotPlugin):
     You can find me in your init directory in the subdirectory plugins.
     """
 
-    def __init__(self):
-        super.__init__(self)
-        print("Hello, i'm the CalcBot.\n")
-        print("I have some rules like: don't give me numbers that the result is repeated.\n\n")
-        print("So, if you give me 3 and 2 and 2 and 3 after, i won't say to you the result because it's repeated and i hate to answer repeated results...\n\n")
-        print("Other thing is to don't give zero value in logic results. You know that 0 x 5 is ZERO, so, don't pretent to not know.")
-
     @re_botcmd(pattern=CALCULE_SUM, flags=re.IGNORECASE, prefixed=False, re_cmd_name_help="Calculate the sum of two numbers", name="calc_sum")
     def calcule_sum(self, message, match):
         args = utils.get_command_args(CALCULE_SUM, match)
