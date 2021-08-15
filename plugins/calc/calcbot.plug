@@ -1,0 +1,9 @@
+[Core]
+Name = CalcBot
+Module = calcbot
+
+[Documentation]
+Description = This is a simple plugin for calculator operations with errbot.
+
+[Python]
+Version = 3
