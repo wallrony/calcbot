@@ -14,9 +14,12 @@ SHOW_DIV_RESULT_LIST = r"^show div results$"
 
 class CalcBot(BotPlugin):
     """
-    This is a very basic plugin to try out your new installation and get you started.
-    Feel free to tweak me to experiment with Errbot.
-    You can find me in your init directory in the subdirectory plugins.
+    That's the CalcBot! The stressed bot that calculates the selected operation
+    result with two given numbers. The unique bots defect is stress, so, if you
+    ask him to calculate an operation that's the results was already answered,
+    he won't reply to you.
+
+    So, follow the README.md file, install, run and be fun!
     """
 
     @re_botcmd(pattern=CALCULE_SUM, flags=re.IGNORECASE, prefixed=False, re_cmd_name_help="Calculate the sum of two numbers", name="calc_sum")
